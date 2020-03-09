@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3de3f556-dc81-40ba-b1b7-c2efaa469cef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch10 몸풀기/배수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch10 몸풀기/숫자맞추기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch10 몸풀기/재귀 최대공약수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch10 몸풀기/진수문제.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch10 몸풀기/최대 공약수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch10 몸풀기/피보나치 수열.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch11 기본/블록쌓기_백트래킹_다시.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch11 기본/세포자기증식.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch11 기본/재난_다시.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch11 기본/탐욕알고리즘.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch12수학식이용알고리즘/기약 분수 구하기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch12수학식이용알고리즘/동전 옮기기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch12수학식이용알고리즘/숫자 순환.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch12수학식이용알고리즘/하노이탑.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch13수학식이용알고리즘2/대칭행렬구하기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch13수학식이용알고리즘2/앞뒤같은제곱.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch13수학식이용알고리즘2/연소수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch13수학식이용알고리즘2/최대연속부분합.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch13수학식이용알고리즘2/화물차배치.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch14 동적계획법/계단오르기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch14 동적계획법/목장 울타리.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch14 동적계획법/스키장 리프트.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch14 동적계획법/스키할강.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch14 동적계획법/스키할강_브루트포스.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch14 동적계획법/타일바르기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch15 동적계획법응용/배낭여행.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch15 동적계획법응용/배낭여행2_복습좋음.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch15 동적계획법응용/시장의도시방문기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch15 동적계획법응용/신입사원선발.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch15 동적계획법응용/해커의도전.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch6_기본정렬알고리즘/버블정렬.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch6_기본정렬알고리즘/삽입정렬.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch6_기본정렬알고리즘/선택정렬.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch6_기본정렬알고리즘/쉘정렬.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch7 향상된 정렬 알고리즘/간단퀵 정렬.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/ch7 향상된 정렬 알고리즘/퀵정렬.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/dfs bfs 기본.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/맵을 이용하는알고리즘/배달부.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/맵을 이용하는알고리즘/배수로공사.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/맵을 이용하는알고리즘/생화학폭탄.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/맵을 이용하는알고리즘/아파트 단지.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/맵을 이용하는알고리즘/체스.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../알고리즘 문제풀이전략_python/연습.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/d연습.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ch22 이진 검색트리/삽입정렬뒤집기.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="57" lean-forward="true" selection-start-line="2" selection-end-line="17" selection-end-column="57" />
+              <folding>
+                <element signature="e#48#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ch4 알고리즘의 시간 복잡도 분석/입문자 커리큘럼">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/고대어사전.py" />
+        <option value="$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/단어제한끝말잇기_오일러.py" />
+        <option value="$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/단어 제한 _ 복습풀이.py" />
+        <option value="$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/고대어사전_위상정렬 기본.py" />
+        <option value="$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/감시카메라문제.py" />
+        <option value="$USER_HOME$/AppData/Local/Temp/_AZTMP1_/gen.py" />
+        <option value="$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/회의실배정_2SAT.py" />
+        <option value="$PROJECT_DIR$/ch29 그래프의 너비우선탐색/어린이날.py" />
+        <option value="$PROJECT_DIR$/ch29 그래프의 너비우선탐색/Sorting Game.py" />
+        <option value="$PROJECT_DIR$/ch1 문제해결과 프로그래밍 대회/록 페스티벌.py" />
+        <option value="$PROJECT_DIR$/ch2 문제 해결 개관/문제해결순서" />
+        <option value="$PROJECT_DIR$/ch6 무식하게풀기/게임판덮기_하.py" />
+        <option value="$PROJECT_DIR$/ch6 무식하게풀기/소풍_하.py" />
+        <option value="$PROJECT_DIR$/ch6 무식하게풀기/여행하는외판원.py" />
+        <option value="$PROJECT_DIR$/ch6 무식하게풀기/시계 맞추기.py" />
+        <option value="$PROJECT_DIR$/ch7 분할정복/쿼드트리뒤집기.py" />
+        <option value="$PROJECT_DIR$/ch7 분할정복/울타리 잘라내기.py" />
+        <option value="$PROJECT_DIR$/ch7 분할정복/팬미팅.py" />
+        <option value="$PROJECT_DIR$/ch6 무식하게풀기/보글게임_하.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/와이들카드.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/와일드카드.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/삼각형위의 최대경로.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/삼각형의 최대경로의 갯수.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/외발뛰기.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/동적 계획법 핵심" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/최대증가부분수열.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/최대증가부분수열_nk.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/최대증가부분수열_nlogn.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/합친 LIS.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/원주율외우기.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/Quantization.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/타일링 방법의수_발상못함.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/장마가 찾아왔다.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/장마가 찾아왔다_노재기.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/비대칭 타일링.py" />
+        <option value="$PROJECT_DIR$/ch8 동적 계획법/비대칭 타일링_ 직접세기.py" />
+        <option value="$PROJECT_DIR$/ch4 알고리즘의 시간 복잡도 분석/입문자 커리큘럼" />
+        <option value="$PROJECT_DIR$/ch18 선형자료구조/파이썬_연결리스트.py" />
+        <option value="$PROJECT_DIR$/ch18 선형자료구조/조세푸스.py" />
+        <option value="$PROJECT_DIR$/ch19 큐 와 스택, 데크/울타리문제.py" />
+        <option value="$PROJECT_DIR$/ch19 큐 와 스택, 데크/짝이 맞지 않는 괄호문제.py" />
+        <option value="$PROJECT_DIR$/파이썬으로 풀린문제 찾는 코드.py" />
+        <option value="$PROJECT_DIR$/ch21 트리의 구현과 순회/트리 순회 순서 변경.py" />
+        <option value="$PROJECT_DIR$/ch4 알고리즘의 시간 복잡도 분석/복잡도에 따른 1초 n크기" />
+        <option value="$PROJECT_DIR$/ch21 트리의 구현과 순회/요새.py" />
+        <option value="$PROJECT_DIR$/ch19 큐 와 스택, 데크/외계신호분석.py" />
+        <option value="$PROJECT_DIR$/ch19 큐 와 스택, 데크/외계신호분석_온라인알고리즘.py" />
+        <option value="$PROJECT_DIR$/d연습.py" />
+        <option value="$PROJECT_DIR$/ch22 이진 검색트리/이진검색트리_파이썬.py" />
+        <option value="$PROJECT_DIR$/ch22 이진 검색트리/너드2.py" />
+        <option value="$PROJECT_DIR$/ch22 이진 검색트리/삽입정렬뒤집기.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="27" />
+    <option name="y" value="17" />
+    <option name="width" value="1338" />
+    <option name="height" value="1020" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="algorithmic problem solving strategies_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithmic problem solving strategies_python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithmic problem solving strategies_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithmic problem solving strategies_python" type="462c0819:PsiDirectoryNode" />
+              <item name="ch4 알고리즘의 시간 복잡도 분석" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithmic problem solving strategies_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithmic problem solving strategies_python" type="462c0819:PsiDirectoryNode" />
+              <item name="ch22 이진 검색트리" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithmic problem solving strategies_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithmic problem solving strategies_python" type="462c0819:PsiDirectoryNode" />
+              <item name="ch29 그래프의 너비우선탐색" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Course" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\coding\algorithmic problem solving strategies_python\ch1 문제해결과 프로그래밍 대회" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.삽입정렬뒤집기">
+    <configuration name="파이썬으로 풀린문제 찾는 코드" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithmic problem solving strategies_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/파이썬으로 풀린문제 찾는 코드.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="트리 순회 순서 변경" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithmic problem solving strategies_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch21 트리의 구현과 순회" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch21 트리의 구현과 순회/트리 순회 순서 변경.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="짝이 맞지 않는 괄호문제" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithmic problem solving strategies_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch19 큐 와 스택, 데크" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch19 큐 와 스택, 데크/짝이 맞지 않는 괄호문제.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="외계신호분석" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithmic problem solving strategies_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch19 큐 와 스택, 데크" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch19 큐 와 스택, 데크/외계신호분석.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="삽입정렬뒤집기" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithmic problem solving strategies_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch22 이진 검색트리" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch22 이진 검색트리/삽입정렬뒤집기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="외계신호분석_온라인알고리즘" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithmic problem solving strategies_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch19 큐 와 스택, 데크" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch19 큐 와 스택, 데크/외계신호분석_온라인알고리즘.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="d연습" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithmic problem solving strategies_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/d연습.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.삽입정렬뒤집기" />
+        <item itemvalue="Python.d연습" />
+        <item itemvalue="Python.외계신호분석_온라인알고리즘" />
+        <item itemvalue="Python.외계신호분석" />
+        <item itemvalue="Python.짝이 맞지 않는 괄호문제" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="22" y="14" width="1070" height="816" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25847048" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32776934" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/단어 제한 _ 복습풀이.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/단어제한끝말잇기_무식.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="18" column="25" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/_AZTMP1_/gen.py" />
+    <entry file="file://$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/고대어사전_위상정렬 기본.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/감시카메라문제.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch28 그래프의 깊이우선탐색/회의실배정_2SAT__포기 시발...py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch29 그래프의 너비우선탐색/Sorting Game_효울떨어짐.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch29 그래프의 너비우선탐색/어린이날.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch29 그래프의 너비우선탐색/Sorting Game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch6 무식하게풀기/소풍_하.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="22" lean-forward="true" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch6 무식하게풀기/게임판덮기_하.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch6 무식하게풀기/여행하는외판원.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <folding>
+            <element signature="e#34#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch6 무식하게풀기/시계 맞추기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-627">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch7 분할정복/쿼드트리뒤집기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding>
+            <element signature="e#219#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch7 분할정복/팬미팅.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch2 문제 해결 개관/문제해결순서">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch6 무식하게풀기/보글게임_하.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/와일드카드_아몰랑,,.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="56" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/삼각형위의 최대경로.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/외발뛰기_브루트포스.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/합친 LIS_나중에 다시풀기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/최대증가부분수열_nlogn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="7" selection-start-line="7" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/타일링 방법의수_발상못함.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/삼각형의 최대경로의 갯수.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/장마가 찾아왔다.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="24" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/장마가 찾아왔다_노재기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/원주율외우기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/Quantization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/동적 계획법 핵심">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/외발뛰기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/비대칭 타일링.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="40" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/비대칭 타일링_ 직접세기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch8 동적 계획법/최대증가부분수열.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch1 문제해결과 프로그래밍 대회/록 페스티벌.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch1 문제해결과 프로그래밍 대회/입문자 커리큘럼">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch18 선형자료구조/파이썬_연결리스트.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch18 선형자료구조/조세푸스.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch19 큐 와 스택, 데크/큐를 이용한 조세푸스.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/파이썬으로 풀린문제 찾는 코드.py" />
+    <entry file="file://$PROJECT_DIR$/ch19 큐 와 스택, 데크/울타리문제.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch21 트리의 구현과 순회/트리 순회 순서 변경.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="33" selection-start-line="3" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch19 큐 와 스택, 데크/짝이 맞지 않는 괄호문제.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="15" column="24" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch7 분할정복/울타리 잘라내기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch21 트리의 구현과 순회/요새.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch19 큐 와 스택, 데크/외계신호분석.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="59" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch19 큐 와 스택, 데크/외계신호분석_온라인알고리즘.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#48#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch4 알고리즘의 시간 복잡도 분석/복잡도에 따른 1초 n크기">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch22 이진 검색트리/이진검색트리_파이썬.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/d연습.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch22 이진 검색트리/삽입정렬뒤집기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="57" lean-forward="true" selection-start-line="2" selection-end-line="17" selection-end-column="57" />
+          <folding>
+            <element signature="e#48#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch4 알고리즘의 시간 복잡도 분석/입문자 커리큘럼">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

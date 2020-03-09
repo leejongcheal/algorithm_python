@@ -1,0 +1,40 @@
+# include <stdio.h>
+int R, C;
+int min = 1;
+bool alpa[100];
+char arr[21][21];
+void dfs(int d, int r, int c){
+
+    if (min < d)
+    min = d;
+    if (min > 25)
+    { // 알파벳개수
+        return;
+    }
+    alpa[arr[r][c]] = true;
+    printf("%d\n", arr[r][c]);
+    if (alpa[arr[r - 1][c]] == false)
+         dfs(d + 1, r - 1, c);
+    if (alpa[arr[r + 1][c]] == false)
+        dfs(d + 1, r + 1, c);
+    if (alpa[arr[r][c - 1]] == false)
+        dfs(d + 1, r, c - 1);
+    if (alpa[arr[r][c + 1]] == false)
+        dfs(d + 1, r, c + 1);
+    alpa[arr[r][c]] = false;
+    }
+
+
+
+int
+main()
+{
+    scanf("%d%d ", & R, & C);
+for (int i = 1; i <= R; i++){
+    scanf("%s", & arr[i][1]);
+    }
+    alpa[arr[0][0]] = true;
+    dfs(1, 1, 1); // 시작지점
+    printf("%d\n", min);
+    return 0;
+}
