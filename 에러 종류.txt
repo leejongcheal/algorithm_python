@@ -1,0 +1,5 @@
+실행중에러 
+-floating pointing 보통 0으로 나누는 경우 확인
+-Segmantation Fault 배열의 크기를 크게 해볼것
+-출력한계 초과 : 예상되는 출력보다 많은 출력이 발생한 경우
+  
