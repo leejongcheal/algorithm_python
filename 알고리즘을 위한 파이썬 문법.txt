@@ -30,8 +30,13 @@ array = [[0]*n for _ in range(m) ]
 출력 print(~~~, sep="") 기본적으로 줄바꿈이 들어감 -> ""으로 사용
 
 출력방식 print("%d %f %s"%(Int,Float,Str))
-	print(f"정답은 {answer} 입니다")
-	또는 format 매서드 사용 -> 굳이 써야하나
+	print(f"정답은 {answer} 입니다") -> 최신버전에서만 제공됨
+	또는 format 매서드 사용 -> 사용할때도 있음 
+        예시:"int: {0:d}, bin: {0:b}, oct: {0:o}, hex: {0:x}".format(42)
+	
+	
+	
+	
 
 
 
