@@ -13,6 +13,8 @@
 
 리스트를 초기화하는 고급문법인 리스트 컴프리헨션
 array = [i for i in Array if i%2 == 0]
+조건문도 추가할수 있다.
+L = [i for i in map(int, sys.stdin.readline().rstrip().split()) if i%2 == 0]
 
 2차원 배열 초기화
 array = [[0]*n for _ in range(m) ] 
