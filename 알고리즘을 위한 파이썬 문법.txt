@@ -37,6 +37,9 @@ array = [[0]*n for _ in range(m) ]
 	print(f"정답은 {answer} 입니다")
 	또는 format 매서드 사용 -> 굳이 써야하나
 
+리스트를 문자열로
+" ".join(L) => 각각 " "으로 구분하여 합친 문자열 반환
+
 
 
 
