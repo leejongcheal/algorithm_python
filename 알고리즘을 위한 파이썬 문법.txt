@@ -15,6 +15,8 @@
 array = [i for i in Array if i%2 == 0]
 조건문도 추가할수 있다.
 L = [i for i in map(int, sys.stdin.readline().rstrip().split()) if i%2 == 0]
+삼항연산자도 이용 가능
+L = [("odd" if i%2 == 1 else "even") for i in map(int, sys.stdin.readline().rstrip().split())]
 
 2차원 배열 초기화
 array = [[0]*n for _ in range(m) ] 
