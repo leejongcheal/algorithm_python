@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4419f47-16eb-435c-9ecc-d30ed810852f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/03 그리디/3-1 거스름돈.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03 그리디/3-1 거스름돈.py" beforeDir="false" afterPath="$PROJECT_DIR$/03 그리디/3-1 거스름돈.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.3-1 거스름돈">
+    <configuration name="3-1 거스름돈" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_book(이것이 코딩테스트다)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03 그리디" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03 그리디/3-1 거스름돈.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="python_book(이것이 코딩테스트다)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,6 +96,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.3-1 거스름돈" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608608597205</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="이것이 코딩테스드다 폴더 생성 + exersize은 연습용이다.">
+      <created>1608609005060</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608609005060</updated>
+    </task>
+    <task id="LOCAL-00003" summary="03 그리디 폴더 생성">
+      <created>1608609020222</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608609020222</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,9 +145,30 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="이것이 코딩테스드다 폴더 생성 + main은 연습용이다." />
-    <option name="LAST_COMMIT_MESSAGE" value="이것이 코딩테스드다 폴더 생성 + main은 연습용이다." />
+    <MESSAGE value="이것이 코딩테스드다 폴더 생성 + exersize은 연습용이다." />
+    <MESSAGE value="03 그리디 폴더 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="03 그리디 폴더 생성" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1044" height="256" key="GridCell.Tab.0.bottom" timestamp="1608609470500">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1044" height="256" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1608609470500" />
+    <state width="1044" height="256" key="GridCell.Tab.0.center" timestamp="1608609470497">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1044" height="256" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1608609470497" />
+    <state width="1044" height="256" key="GridCell.Tab.0.left" timestamp="1608609470496">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1044" height="256" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1608609470496" />
+    <state width="1044" height="256" key="GridCell.Tab.0.right" timestamp="1608609470500">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1044" height="256" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1608609470500" />
   </component>
 </project>
