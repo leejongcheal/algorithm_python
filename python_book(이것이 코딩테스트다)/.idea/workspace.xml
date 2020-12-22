@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4419f47-16eb-435c-9ecc-d30ed810852f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/03 그리디/3-4 1일 될때까지.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04 구현/4-1 상하좌우.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -247,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608620380706</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="3-4 1일 될때까지 빼기&#10;해설보다 내풀이가 가독성 더좋음">
+      <created>1608621958131</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608621958131</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,24 +277,29 @@
     <MESSAGE value="3-2 큰수의 법칙 개인풀이" />
     <MESSAGE value="3-2 큰수의 법칙 해답&#10;N으로는 100억 이상의 크기를 받을수 없다&#10;-&gt; 새로운 알고리즘 풀이 필요&#10;O(1) 풀이" />
     <MESSAGE value="3-3 숫자카드게임&#10;1e9 == 10^9을 뜻함&#10;*** 주의할점은 float 값이라는거다.&#10;흠,,, 굳이 문제되진 않네 실수 ㅎㅎ" />
-    <option name="LAST_COMMIT_MESSAGE" value="3-3 숫자카드게임&#10;1e9 == 10^9을 뜻함&#10;*** 주의할점은 float 값이라는거다.&#10;흠,,, 굳이 문제되진 않네 실수 ㅎㅎ" />
+    <MESSAGE value="3-4 1일 될때까지 빼기&#10;해설보다 내풀이가 가독성 더좋음" />
+    <option name="LAST_COMMIT_MESSAGE" value="3-4 1일 될때까지 빼기&#10;해설보다 내풀이가 가독성 더좋음" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1044" height="256" key="GridCell.Tab.0.bottom" timestamp="1608621550578">
+    <state x="578" y="299" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608623666158">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1608621550578" />
-    <state width="1044" height="256" key="GridCell.Tab.0.center" timestamp="1608621550578">
+    <state x="578" y="299" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1608623666158" />
+    <state width="1044" height="256" key="GridCell.Tab.0.bottom" timestamp="1608624036661">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1608621550578" />
-    <state width="1044" height="256" key="GridCell.Tab.0.left" timestamp="1608621550578">
+    <state width="1044" height="256" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1608624036661" />
+    <state width="1044" height="256" key="GridCell.Tab.0.center" timestamp="1608624036660">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1608621550578" />
-    <state width="1044" height="256" key="GridCell.Tab.0.right" timestamp="1608621550578">
+    <state width="1044" height="256" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1608624036660" />
+    <state width="1044" height="256" key="GridCell.Tab.0.left" timestamp="1608624036660">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1608621550578" />
+    <state width="1044" height="256" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1608624036660" />
+    <state width="1044" height="256" key="GridCell.Tab.0.right" timestamp="1608624036661">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1044" height="256" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1608624036661" />
   </component>
 </project>
