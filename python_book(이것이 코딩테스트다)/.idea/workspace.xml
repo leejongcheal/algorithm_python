@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4419f47-16eb-435c-9ecc-d30ed810852f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/03 그리디/3-4 1일 될때까지.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03 그리디/3-3 숫자카드게임.py" beforeDir="false" afterPath="$PROJECT_DIR$/03 그리디/3-3 숫자카드게임.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../알고리즘을 위한 파이썬 문법.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../알고리즘을 위한 파이썬 문법.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,28 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.3-3 숫자카드게임">
-    <configuration name="3-1 거스름돈" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python_book(이것이 코딩테스트다)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03 그리디" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03 그리디/3-1 거스름돈.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.3-4 1일 될때까지">
     <configuration name="3-2 해답" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_book(이것이 코딩테스트다)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,6 +116,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="3-4 1일 될때까지" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_book(이것이 코딩테스트다)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03 그리디" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03 그리디/3-4 1일 될때까지.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="exersize" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_book(이것이 코딩테스트다)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.3-4 1일 될때까지" />
         <item itemvalue="Python.3-3 숫자카드게임" />
         <item itemvalue="Python.3-2 해답" />
         <item itemvalue="Python.3-2 큰수의 법칙" />
         <item itemvalue="Python.exersize" />
-        <item itemvalue="Python.3-1 거스름돈" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608619135677</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="3-3 숫자카드게임&#10;1e9 == 10^9을 뜻함&#10;*** 주의할점은 float 값이라는거다.&#10;흠,,, 굳이 문제되진 않네 실수 ㅎㅎ">
+      <created>1608620380706</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608620380706</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,24 +269,25 @@
     <MESSAGE value="3-1 거스름돈 알고리즘 풀이" />
     <MESSAGE value="3-2 큰수의 법칙 개인풀이" />
     <MESSAGE value="3-2 큰수의 법칙 해답&#10;N으로는 100억 이상의 크기를 받을수 없다&#10;-&gt; 새로운 알고리즘 풀이 필요&#10;O(1) 풀이" />
-    <option name="LAST_COMMIT_MESSAGE" value="3-2 큰수의 법칙 해답&#10;N으로는 100억 이상의 크기를 받을수 없다&#10;-&gt; 새로운 알고리즘 풀이 필요&#10;O(1) 풀이" />
+    <MESSAGE value="3-3 숫자카드게임&#10;1e9 == 10^9을 뜻함&#10;*** 주의할점은 float 값이라는거다.&#10;흠,,, 굳이 문제되진 않네 실수 ㅎㅎ" />
+    <option name="LAST_COMMIT_MESSAGE" value="3-3 숫자카드게임&#10;1e9 == 10^9을 뜻함&#10;*** 주의할점은 float 값이라는거다.&#10;흠,,, 굳이 문제되진 않네 실수 ㅎㅎ" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1044" height="256" key="GridCell.Tab.0.bottom" timestamp="1608620177485">
+    <state width="1044" height="256" key="GridCell.Tab.0.bottom" timestamp="1608621550578">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1608620177485" />
-    <state width="1044" height="256" key="GridCell.Tab.0.center" timestamp="1608620177485">
+    <state width="1044" height="256" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1608621550578" />
+    <state width="1044" height="256" key="GridCell.Tab.0.center" timestamp="1608621550578">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1608620177485" />
-    <state width="1044" height="256" key="GridCell.Tab.0.left" timestamp="1608620177485">
+    <state width="1044" height="256" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1608621550578" />
+    <state width="1044" height="256" key="GridCell.Tab.0.left" timestamp="1608621550578">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1608620177485" />
-    <state width="1044" height="256" key="GridCell.Tab.0.right" timestamp="1608620177485">
+    <state width="1044" height="256" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1608621550578" />
+    <state width="1044" height="256" key="GridCell.Tab.0.right" timestamp="1608621550578">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1608620177485" />
+    <state width="1044" height="256" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1608621550578" />
   </component>
 </project>
