@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4419f47-16eb-435c-9ecc-d30ed810852f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03 그리디/3-2 큰수의 법칙.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03 그리디/3-1 거스름돈.py" beforeDir="false" afterPath="$PROJECT_DIR$/03 그리디/3-1 거스름돈.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.3-1 거스름돈">
+  <component name="RunManager" selected="Python.exersize">
     <configuration name="3-1 거스름돈" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_book(이것이 코딩테스트다)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,6 +66,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03 그리디/3-1 거스름돈.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="exersize" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_book(이것이 코딩테스트다)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exersize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.exersize" />
         <item itemvalue="Python.3-1 거스름돈" />
       </list>
     </recent_temporary>
@@ -132,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608609020222</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="3-1 거스름돈 알고리즘 풀이">
+      <created>1608609549302</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608609549302</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,7 +179,8 @@
     <MESSAGE value="이것이 코딩테스드다 폴더 생성 + main은 연습용이다." />
     <MESSAGE value="이것이 코딩테스드다 폴더 생성 + exersize은 연습용이다." />
     <MESSAGE value="03 그리디 폴더 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="03 그리디 폴더 생성" />
+    <MESSAGE value="3-1 거스름돈 알고리즘 풀이" />
+    <option name="LAST_COMMIT_MESSAGE" value="3-1 거스름돈 알고리즘 풀이" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1044" height="256" key="GridCell.Tab.0.bottom" timestamp="1608609470500">
