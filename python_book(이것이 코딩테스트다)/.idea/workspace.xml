@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4419f47-16eb-435c-9ecc-d30ed810852f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/04 구현/4 - 3 왕실의 나이트.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04 구현/4-3 해설.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04 구현/4-4 게임개발.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.4 - 3 왕실의 나이트">
+  <component name="RunManager" selected="Python.4-4 게임개발">
     <configuration name="4 - 3 왕실의 나이트" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_book(이것이 코딩테스트다)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,27 +88,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04 구현/4-1 상하좌우.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="4-1 해설" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python_book(이것이 코딩테스트다)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04 구현" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04 구현/4-1 해설.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,6 +159,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="4-4 게임개발" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_book(이것이 코딩테스트다)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04 구현" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04 구현/4-4 게임개발.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="python_book(이것이 코딩테스트다)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -203,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.4-4 게임개발" />
         <item itemvalue="Python.4 - 3 왕실의 나이트" />
         <item itemvalue="Python.4-3 해설" />
         <item itemvalue="Python.4-2 시각" />
         <item itemvalue="Python.4-2 해답 완전탐색" />
-        <item itemvalue="Python.4-1 해설" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608686061108</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="4 - 3 왕실의 나이트&#10;&#10;dx,dy 풀이와 steps = [(),()...]풀이 둘다 있다.">
+      <created>1608687029806</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608687029806</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,28 +331,29 @@
     <MESSAGE value="4-1 상하좌우 풀이&#10;&#10;해설이 압도적으로 깔끔하니 참고할것." />
     <MESSAGE value="4-1 상하좌우 해설&#10;&#10;dx,dy와 movetype의 i로 깔끔하게 더하는 방식을 가질것&#10;*** 실제는 0,0인데 문제는 1,1시작하는경우 체크하고 문제풀것" />
     <MESSAGE value="4 - 2 시각 풀이&#10;&#10;n**3으로 풀어도 충분하기에 완전탐색인 답지&#10;미리 계산해서 푸는 나의 풀이 또이또이" />
-    <option name="LAST_COMMIT_MESSAGE" value="4 - 2 시각 풀이&#10;&#10;n**3으로 풀어도 충분하기에 완전탐색인 답지&#10;미리 계산해서 푸는 나의 풀이 또이또이" />
+    <MESSAGE value="4 - 3 왕실의 나이트&#10;&#10;dx,dy 풀이와 steps = [(),()...]풀이 둘다 있다." />
+    <option name="LAST_COMMIT_MESSAGE" value="4 - 3 왕실의 나이트&#10;&#10;dx,dy 풀이와 steps = [(),()...]풀이 둘다 있다." />
   </component>
   <component name="WindowStateProjectService">
     <state x="578" y="299" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608623666158">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="578" y="299" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1608623666158" />
-    <state width="1044" height="256" key="GridCell.Tab.0.bottom" timestamp="1608686891336">
+    <state width="1044" height="259" key="GridCell.Tab.0.bottom" timestamp="1608709993240">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1608686891336" />
-    <state width="1044" height="256" key="GridCell.Tab.0.center" timestamp="1608686891336">
+    <state width="1044" height="259" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1608709993240" />
+    <state width="1044" height="259" key="GridCell.Tab.0.center" timestamp="1608709993240">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1608686891336" />
-    <state width="1044" height="256" key="GridCell.Tab.0.left" timestamp="1608686891336">
+    <state width="1044" height="259" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1608709993240" />
+    <state width="1044" height="259" key="GridCell.Tab.0.left" timestamp="1608709993240">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1608686891336" />
-    <state width="1044" height="256" key="GridCell.Tab.0.right" timestamp="1608686891336">
+    <state width="1044" height="259" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1608709993240" />
+    <state width="1044" height="259" key="GridCell.Tab.0.right" timestamp="1608709993240">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1044" height="256" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1608686891336" />
+    <state width="1044" height="259" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1608709993240" />
   </component>
 </project>
