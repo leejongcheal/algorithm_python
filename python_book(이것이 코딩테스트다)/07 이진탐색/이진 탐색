@@ -3,6 +3,12 @@
 이진탐색: 이미 리스트가 정렬되어있는경우 빠른 탐색 알고리즘 logN
 처리해야할 데이터의 갯수가 천만개 이상인 경우 떠올려서 사용
 
+이진탐색 과정
+1) 더이상 비교할것이 없는 경우 return (start > end)
+2) mid값과 target 비교 - 같은 경우 찾았으니 return
+                      -mid가 큰 경우 왼쪽에 대해서 이진탐색
+                      -mid가 작은경우 오른쪽에 대해서 이진탐색
+
 예제 코드
 def binary_search(L, target, start, end):
     if start > end:
@@ -12,11 +18,12 @@ def binary_search(L, target, start, end):
     if L[mid] == target:
         return mid
     elif L[mid] > target:
-        start = mid + 1
-    elif L[mid] < target:
         end = mid - 1
+    elif L[mid] < target:
+        start = mid + 1
     return binary_search(L, target, start, end)
-    # return 을 해줘야 None이든 해당 index값이든 들어가겠지
+    # ***return 을 해줘야 None이든 해당 index값이든 들어가겠지
+
 이진탐색은 데이터가 많을경우에 효과적 -> 입력 받을 데이터가 많다
 -> sys.stdin.readline()사용 -> 엔터를 줄바꿈으로 받기에 rstrip() 사용을 관행적으로 외우기
 sys.stdin.readline().rstrip()
