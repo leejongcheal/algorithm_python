@@ -1,0 +1,24 @@
+순차 탐색: 리스트 안에 있는 특정한 테이터를 찾기 위해 앞에서부터 데이터를 찾기 위해 앞에서부터 데이터를 하나씩 차례대로 확인 하는 방법
+
+이진탐색: 이미 리스트가 정렬되어있는경우 빠른 탐색 알고리즘 logN
+처리해야할 데이터의 갯수가 천만개 이상인 경우 떠올려서 사용
+
+예제 코드
+def binary_search(L, target, start, end):
+    if start > end:
+        return None
+    #*** start == end 인 경우는 이제 1개가 남은경우인데 이경우도 target 비교는 해야됨 주의
+    mid = (start + end)//2
+    if L[mid] == target:
+        return mid
+    elif L[mid] > target:
+        start = mid + 1
+    elif L[mid] < target:
+        end = mid - 1
+    return binary_search(L, target, start, end)
+    # return 을 해줘야 None이든 해당 index값이든 들어가겠지
+이진탐색은 데이터가 많을경우에 효과적 -> 입력 받을 데이터가 많다
+-> sys.stdin.readline()사용 -> 엔터를 줄바꿈으로 받기에 rstrip() 사용을 관행적으로 외우기
+sys.stdin.readline().rstrip()
+
+7-2 떡볶이 문제 꼭 확인 매우좋은 문제
