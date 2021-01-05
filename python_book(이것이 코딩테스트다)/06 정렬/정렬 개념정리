@@ -27,7 +27,7 @@
  1) 데이터 갯수가 1개인 경우 종료(start >= end)
  2) pivot = start, left = start + 1, right = end 으로 초기화
  3) pivot 보다 큰 left, 작은 right 찾기    - left <= right: left right 교환 3)반복
-                                        - left > right: right pivot 교환  4)로
+                         ***암기         - left > right: right pivot 교환  4)로
  4) pivot의 왼쪽과 오른쪽 배열 각각 1번으로
 
 예제
