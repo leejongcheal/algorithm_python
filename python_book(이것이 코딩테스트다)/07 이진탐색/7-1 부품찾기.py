@@ -12,15 +12,17 @@
 
 
 n = int(input())
-L = [0]*1000000
-for i in input().split():
-    L[int(i)] = 1
+# L = [0]*1000000
+# for i in input().split():
+#     L[int(i)] = 1
+N = set(map(int, input().split()))
 m = int(input())
 M = list(map(int, input().split()))
 result = []
 for i in M:
     # if binary_search(N,i,0,n-1) != -1:
-    if L[i] == 1:
+    # if L[i] == 1:
+    if i in N:
         result.append("yes")
     else:
         result.append("no")
