@@ -1,0 +1,20 @@
+현재점: index, now
+
+거리: distance-> dist
+
+결과, 답: result, res
+
+비용: cost
+
+기본 좌표 i,j 이용 + x,y 2차 표현
+
+INF= int(1e9) 무한값을 표현하고 싶을떄
+
+그래프: graph
+
+큐: queue, q
+
+입력 input: sys.stdin.readline 
+input() 처럼 사용가능 
+
+수: count, cnt
