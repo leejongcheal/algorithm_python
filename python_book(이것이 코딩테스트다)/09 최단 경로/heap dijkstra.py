@@ -17,8 +17,8 @@ while q:
     if res[index] < dist:
         continue
     for i in g[index]:
-        if res[i[0]]> dist + i[1]:
+        if res[i[0]] > dist + i[1]:
             res[i[0]] = dist + i[1]
-            heapq.heappush(q,(res[i[0]],i[0]))
+            heapq.heappush(q, (res[i[0]], i[0]))
 for i in res:
     print(i)
