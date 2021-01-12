@@ -8,12 +8,13 @@ def find_parent(parent, x):
 # 두 원소가 속한 집합을 합치기
 def union_parent(parent, a, b):
     # 루트노드 찾기
-    a = find_parent(parent, a)
-    b = find_parent(parent, b)
-    if a < b:
-        parent[b] = a
+    A = find_parent(parent, a)
+    B = find_parent(parent, b)
+    if A < B:
+        parent[B] = A
     else:
-        parent[a] = b
+        parent[A] = B
+    # *** 처음 union 과정의 a,b가 아닌 서로의 루트인 A, B에 대해서 값 바꾸는것을 주의
 # 노드와 간선갯수 받음
 v, e = map(int,input().split())
 parent = [0]*(v+1)
