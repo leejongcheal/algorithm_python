@@ -18,3 +18,12 @@ INF= int(1e9) 무한값을 표현하고 싶을떄
 input() 처럼 사용가능 
 
 수: count, cnt
+
+노드: v
+
+간선: e or edge or 간선들: edges
+
+정도, 진입차수 : indegree
+
+방식 or 연산종류: operation or oper
+- 번호에 따른 다른 연산 -> 그 번호를 operation으로 표현
