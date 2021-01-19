@@ -12,12 +12,12 @@
 
 
 선택정렬 O(N^2) 별로임
- - 그래도 특정 리스트에서 가장 작은 데이터를 찾는일등 간단하게 사용
+ - 그래도 특정 리스트에서 가장 작은 데이터를 찾는일등 '간단하게 사용'
 삽입 정렬 O(N^2) 지만 최선의 경우 거의 O(N)
- - 퀵정렬보단 느리지만 데이터가 거의 정렬되어 있다면 강력한 실행속도를 가짐.
-계수정렬 데이터중 최댓값이 K일때 O(N+K)
+ - 퀵정렬보단 느리지만 데이터가 '거의 정렬되어' 있다면 강력한 실행속도를 가짐.
+계수정렬 데이터중 '최댓값이 K'일때 O(N+K)  "가장 낮은 값과 큰값의 차이가 백만 이하일때 효과적"
  - 특정한 조건이 부합할 때만 사용가능하지만 매우 빠름
-    - 데이터의 크기 범위가 제한된 정수의 경우 사용가능
+    - '데이터의 크기 범위가 제한된 정수'의 경우 사용가능
  - 기수정렬과 더불어 가장 빠름, 기수정렬이 범위 더크게 가능하고 더 어려움
 퀵정렬 O(NlogN)
  - 사실상 제일 빠른, 많이 쓰이는 정렬 알고리즘
@@ -39,6 +39,9 @@
     pivot = start
     left = start + 1
     right = end
+    # 탈출 조건은 뭔 개짓을 해도 left < right 인 경우에 탈출함
+    # left == right 인경우가 나오긴 하는데 해당값이 pivot이랑 같은 값의 경우 예외처리이다.
+    # 위 경우 탈출해도 상관없긴한데 직관적이 풀이를 하자
     while left <= right:
         # 3)
         while left <= end and L[left] <= L[pivot]:
@@ -55,5 +58,19 @@
     # 4) right가 pivot 값인것을 기억
     quick_sort(L, start, right - 1)
     quick_sort(L, right + 1, end)
+
+위의 어려운 코드랑 차원이 다른 직관적인 파이썬의 퀵정렬 코드
+def quick_sort(list):
+    if len(list): return list
+    pivot = list[len(list)//2]
+    less_arr, equal_arr, big_arr = [], [], []
+    for i in list:
+        if i < pivot:
+            less_arr.append(i)
+        elif i == pivot:
+            equal_arr.append(i)
+        elif i > pivot:
+            big_arr.append(i)
+    return quick_sort(less_arr) + equal_arr + quick_sort(big_arr)
 
 
