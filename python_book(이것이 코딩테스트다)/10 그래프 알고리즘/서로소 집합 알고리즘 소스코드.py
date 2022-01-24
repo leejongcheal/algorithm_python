@@ -6,6 +6,16 @@ def find_parent(parent, x):
     parent[x] = find_parent(parent, parent[x])
     return parent[x]
     # 메모리 제이션을 활용한 개선된 find 함수
+
+# 후 recursion 범위 넘어가는 경우 + 빠른 시간을 위한 재귀없는 find 함수
+def find(parent, x):
+    while x != parent[x]:
+        x = parent[x]
+    return x
+
+
+
+
 # 두 원소가 속한 집합을 합치기
 def union_parent(parent, a, b):
     # 루트노드 찾기

@@ -1,52 +1,56 @@
 from collections import deque
-# 주어진 x,y 에 대해 덩어리를 만들고 숫자기록
-# 덩어리 있으면 1 없으면 0 리턴
-def BFS(i,j):
-    global A, L, R, N, visit
+def BFS(x, y, graph, union_visit):
+    global N, L, R
+    # xy 포함된 연합찾고 연합값으로 그래프 업데이트
+    # 만약에 연합이 있는 경우에 1 리턴 아니면 0리턴
+    if union_visit[x][y] != 0:
+        return 0
+    start = (x, y)
     steps = [(1,0),(-1,0),(0,1),(0,-1)]
-    cnt = 1
-    set_sum = A[i][j]
-    set_List = [(i, j)]
+    union = [(x,y)]
+    union_visit[x][y] = 1
     q = deque()
-    visit.append((i, j))
-    q.append((i, j))
+    q.append((x,y))
+    total_value = graph[x][y]
     while q:
         x, y = q.popleft()
         for step in steps:
-            nx, ny = x + step[0], y+ step[1]
-            if 0 <= nx < N and 0 <= ny < N:
-                if L <= abs(A[x][y] - A[nx][ny]) <= R and (nx,ny) not in visit:
-                    q.append((nx, ny))
-                    visit.append((nx, ny))
-                    cnt += 1
-                    set_sum += A[nx][ny]
-                    set_List.append((nx, ny))
-    if cnt != 1:
-        averege = int(set_sum / cnt)
-        for set in set_List:
-            x, y = set[0], set[1]
-            A[x][y] = averege
+            nx, ny = x + step[0], y+step[1]
+            if 0 <= nx < N and 0 <= ny < N and union_visit[nx][ny] == 0:
+                if L <= abs(graph[x][y] - graph[nx][ny]) <= R:
+                    q.append((nx,ny))
+                    union_visit[nx][ny] = 1
+                    union.append((nx,ny))
+                    total_value += graph[nx][ny]
+    if len(union) > 1:
+        # print(total_value, len(union))
+        union_avg = total_value // (len(union))
+        for x, y in union:
+            graph[x][y] = union_avg
         return 1
     else:
+        # 어쩌피 방문해서 검사한경우 연합이 없는 좌표는 인접한 어떤점에 대해서 연합을 못만드는것이니 나중에 인접한 좌표에서 연합인지 검사할 필요가 없음
+        # x, y = start
+        # union_visit[x][y] = 0
         return 0
 
-
-
 N, L, R = map(int, input().split())
-A = []
-for _ in range(N):
-    A.append(list(map(int, input().split())))
-result = 0
+graph = []
+for i in range(N):
+    graph.append(list(map(int, input().split())))
+turn = 0
+flag = 1
 while 1:
     flag = 0
-    visit = []
+    union_visit = [[0]*N for _ in range(N)]
     for i in range(N):
         for j in range(N):
-            if (i,j) not in visit:
-                if BFS(i,j) == 1:
-                    flag = 1
+            if BFS(i,j, graph, union_visit) == 1:
+                flag = 1
     if flag == 0:
         break
-    else:
-        result += 1
-print(result)
+    turn += 1
+    # for g in graph:
+    #     print(g)
+    # print("---")
+print(turn)

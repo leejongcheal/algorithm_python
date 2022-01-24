@@ -6,6 +6,9 @@
     장점: 메모리 측면에서 효율
     단점: 정보를 얻는속도가 느림
 
+시간복잡도
+- 인접리스트의 경우 O(V + E)
+- 인접행렬의 경우 O(V^2)
 
 *** 먼저 스택이나 큐에 집어 넣은 상태에서 꺼낸 노드에 대해서 작업
 *** DFS는 재귀함수를 써서 텀퓨터 시스템의 동작 특성상 실제 프로그램의 수행 시간은 느려질수 있다. 또한 삼성은 sys 모듈을 제한하기에 쓰기도 쉽지않고,
@@ -26,12 +29,33 @@ DFS: 깊이 우선 탐색, 그래프에서 깊은 부분을 우선적을 탐색�
  1) 재귀함수 사용
  def dfs(graph, v, visited):
     # 현재 노드를 방문 처리
-    visited = 1
+    visited[v] = 1
     print(v, end= '')
     # 현재 노드와 연결된 다른 노드를 재귀적으로 방문
     for i in graph[v]:
         if not visited[i]:
             dfs(graph, i, visited)
+
+1-1) 현실적인 dfs
+def dfs(Map, index):
+    global L, res
+    # res에 값을 채우면 종료해야함(여러개중 하나만 필요한 경우)
+    if res != []:
+        return
+    # res 구한경우
+    if index == len(L):
+        res = Map
+        return
+    x, y = L[index]
+    for n in find_posiible_n(Map, x, y):
+        Map[x][y] = n
+        dfs(Map, index + 1)
+        if res != []:
+            return
+        # 위에서 Map[x][y] = n 을 넣어서 돌아서 나온거는 값을 못구한것
+        # 따라서 Map[x][y] = 0 으로 초기화 해주는것
+        # 그리고 이러한 순서는 dfs의 핵심이니 copy = deepcopy(Map) 해서 쓸필요가 전혀 없음을 인지
+        Map[x][y] = 0
 
 
  2) 스택사용 -> 사실 스택 응용 개념인거 같은데

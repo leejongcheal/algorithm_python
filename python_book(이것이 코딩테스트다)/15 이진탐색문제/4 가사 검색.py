@@ -16,12 +16,12 @@ def solution(words, queries):
         cnt = 0
         if q[0] == '?':
             rq = q[::-1]
-            ra = rq.replace('?',"a")
-            rz = rq.replace('?',"z")
+            ra = rq.replace('?', "a")
+            rz = rq.replace('?', "z")
             cnt = bisect_right(reverse_by_len[len_q],rz) - bisect_left(reverse_by_len[len_q], ra)
         elif q[0] != '?':
-            qa= q.replace('?',"a")
-            qz= q.replace('?','z')
+            qa= q.replace('?', "a")
+            qz= q.replace('?', 'z')
             cnt = bisect_right(word_by_len[len_q], qz) - bisect_left(word_by_len[len_q], qa)
         answer.append(cnt)
     return answer

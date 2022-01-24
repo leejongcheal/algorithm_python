@@ -29,6 +29,12 @@ deque의  appendleft, popleft  O(1)
 
 사전 or 집합에서 원소존재검사 O(1)
 
+dfs/ bfs 시간복잡도
+- 인접리스트 O(V + E)
+- 인접 행렬 O(V ^2)
+다익스트라 알고리즘
+- 단순 O(V^2)
+- 힙사용 O(ElogV)
 
 
 
