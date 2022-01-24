@@ -1,7 +1,7 @@
 *.iml
 *.xml
 *.name
--test
+python_book(이것이 코딩테스트다)/*-test
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
