@@ -11,9 +11,11 @@ def perm(L, n):
             ret.append([l])
     else:
         for i in range(N):
+            # L[N] 은 오류남 but L[N:] 은 빈 리스트 반환
             for temp in perm(L[0:i] + L[i+1:], n - 1):
                 ret.append([L[i]] + temp)
     return ret
+
 
 def comb(L, n):
     ret = []
@@ -25,7 +27,7 @@ def comb(L, n):
             ret.append([i])
             # 리스트로 집어 넣어줘야함
     else:
-        for i in range(N- n + 1):
+        for i in range(N - n + 1):
             for temp in comb(L[i+1:], n-1):
                 ret.append([L[i]] + temp)
                 # *** [i] 가 아닌 [L[i]]로 집어넣줘야함
@@ -46,5 +48,12 @@ def repeat_permutaion(mod, N):
                 for temp in repeat_permutaion(C, N-1):
                     ret.append([i] + temp)
     return ret
-L = [1,2,3,4,5,6,7,8,9,10]
-print(permutations(L))
+L = [1,2,3]
+print(list(permutations(L)))
+print(perm(L,3))
+print(list(permutations(L, 2)))
+print(perm(L,2))
+print(list(combinations(L,3)))
+print(comb(L,3))
+print(list(combinations(L,2)))
+print(comb(L,2))
