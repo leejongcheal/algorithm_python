@@ -36,7 +36,7 @@ L의 원소의 1자리부터 정렬(오름차순) / 같은경우에는 2자리 �
  4) pivot의 왼쪽과 오른쪽 배열 각각 1번으로
 
 예제
- def quick_sort(L, start, end):
+def quick_sort(L, start, end):
     # 1)
     if start >= end:
         return
@@ -45,21 +45,22 @@ L의 원소의 1자리부터 정렬(오름차순) / 같은경우에는 2자리 �
     left = start + 1
     right = end
     # 탈출 조건은 뭔 개짓을 해도 left < right 인 경우에 탈출함
-    # left == right 인경우가 나오긴 하는데 해당값이 pivot이랑 같은 값의 경우 예외처리이다.
+    # right 는 start ~ end 값이고 left는 최대값이 start ~ end + 1로 만들어서 어떤경우던 탈출하긴함
     # 위 경우 탈출해도 상관없긴한데 직관적이 풀이를 하자
     while left <= right:
         # 3)
-        while left <= end and L[left] <= L[pivot]:
+        while left <= end and L[left] <= L[pivot]: # [4, 3]의 경우 left, right가 1에서 고정됨으로 left을 end + 1값이 될수 있드록
             left += 1
         # 3)
         while right > start and L[right] >= L[pivot]:
             right -= 1
         # 3) left <= right 3번 반복
-        if left <= right:
+        if left <= right: # left 와 right 값 교환
             L[left], L[right] = L[right], L[left]
         # 3) left > right 탈출후 4번으로
-        else:
-            L[right], L[pivot], L[pivot], L[right]
+        else: # left > right 인경우 right 와 pivot 교환
+            L[right], L[pivot] = L[pivot], L[right]
+        print(left, right)
     # 4) right가 pivot 값인것을 기억
     quick_sort(L, start, right - 1)
     quick_sort(L, right + 1, end)
