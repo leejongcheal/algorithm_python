@@ -21,6 +21,7 @@ for a in range(1,n+1):
             print(graph[a][b], end =" ")
     print()
 # 점화식에 따른 플로이드 워셜 알고리즘 수행
+## 확인 k i j 순의 반복을 돌아야함 -> 다른 순서로 하면 다름
 for k in range(1,n+1):
     for i in range(1,n+1):
         for j in range(1,n+1):
