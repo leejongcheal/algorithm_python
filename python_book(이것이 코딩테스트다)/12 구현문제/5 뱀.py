@@ -1,51 +1,49 @@
 from collections import deque
-
-
-steps = [(-1, 0),(0, 1),(1, 0),(0, -1)]
-def solution(Map, D, N):
-    d = 1
-    q = deque()
-    q.append((0,0))
-    bam = (0,0)
-    t = 0
-    while 1:
-        t += 1
-        x, y = bam
-        nx, ny = x + steps[d][0], y + steps[d][1]
-        if 0 <= nx < N and 0 <= ny < N:
-            if Map[nx][ny] == 0:
-                Map[nx][ny] = 1
-                q.append((nx,ny))
-                tx, ty = q.popleft()
-                Map[tx][ty] = 0
-            elif Map[nx][ny] == 2:
-                Map[nx][ny] = 1
-                q.append((nx,ny))
-            elif Map[nx][ny] == 1:
-                return t
-            bam = (nx, ny)
-        else:
-            return t
-        d = (d + D[t])%4
-
-
+steps = [(0,1),(1,0),(0,-1),(-1,0)]
 N = int(input())
 Map = [[0]*N for _ in range(N)]
-Map[0][0] = 1
 K = int(input())
-# -1 해서 사용 하기
 for _ in range(K):
-    x, y = map(int, input().split())
-    x -= 1
-    y -= 1
-    Map[x][y] = 2
-T = int(input())
-D = [0]*(10001)
-for _ in range(T):
-    t, dir = input().split()
-    t = int(t)
-    if dir == "D":
-        D[t] = 1
-    elif dir == "L":
-        D[t] = -1
-print(solution(Map, D, N))
+    i, j = map(int,input().split())
+    Map[i-1][j-1] = 1
+C = int(input())
+bam = deque()
+command = deque()
+for _ in range(C):
+    x, c = input().split()
+    x = int(x)
+    if c == "D":
+        command.append((x,1))
+    elif c == "L":
+        command.append((x, -1))
+x, y = (0, 0)
+Map[0][0] = 2
+d = 0
+bam.append((0,0))
+time = 0
+flag = 1
+if command:
+    ntime, nd = command.popleft()
+while 1:
+    time += 1
+    nx, ny = x + steps[d][0], y + steps[d][1]
+    if 0 <= nx < N and 0 <= ny < N:
+        if Map[nx][ny] == 0:
+            tx, ty = bam.popleft()
+            Map[tx][ty] = 0
+            bam.append((nx, ny))
+        elif Map[nx][ny] == 1:
+            bam.append((nx, ny))
+        elif Map[nx][ny] == 2:
+            flag = 0
+        x, y = nx, ny
+        Map[x][y] = 2
+    else:
+        flag = 0
+    if flag == 0:
+        break
+    if time == ntime:
+        d += nd
+        if command:
+            ntime, nd = command.popleft()
+print(time)
