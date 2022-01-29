@@ -2,24 +2,21 @@ import heapq
 
 
 def solution(food_times, k):
-    N = len(food_times)
     if sum(food_times) <= k:
         return -1
-    now_k = 0
-    turn = 0
     q = []
-    for i in range(N):
-        heapq.heappush(q,(food_times[i], i))
-    while k >= now_k + N*(q[0][0] - turn):
-        value, index = heapq.heappop(q)
-        if value <= turn:
-            N -= 1
-            continue
-        now_k += N * (value - turn)
-        turn = value
-        N -= 1
-    q.sort(key=lambda x : x[1])
-    return q[(k - now_k)%N][1] + 1
+    for i in range(1, len(food_times)+1):
+        heapq.heappush(q,(food_times[i-1], i))
+    value = len(food_times)
+    time = 0
+    turn = 0
+    while k >= time + (q[0][0]-turn)*value:
+        min_turn, index = heapq.heappop(q)
+        time += (min_turn - turn)*value
+        turn = min_turn
+        value -= 1
+    q.sort(key=lambda x:x[1])
+    return q[(k - time)%value][1]
 
 
 L = list(map(int, input().split()))
