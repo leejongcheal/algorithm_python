@@ -1,23 +1,19 @@
-# 기둥 설치가능한지 확인
-# pass 가능 1 불가능 0 반환
 def row_check(x, y, result):
     if y == 0:
         return 1
     for r in result:
         i, j, a = r[0], r[1], r[2]
-        if i == x and j == y - 1 and a == 0:
+        if i == x and j == y and a == 1:
             return 1
         if i == x - 1 and j == y and a == 1:
             return 1
-        if i == x and j == y and a == 1:
+        if i == x and j == y - 1 and a == 0:
             return 1
+    return 0
 
 
-def col_check(x, y, result):
-    # 보 설치 가능한지 확인
-    # 가능 1 불가능 0
-    # 양옆에 보있는지 확인하는 flag
-    flag1, flag2 = 0, 0
+def bottom_check(x, y, result):
+    b0, b1 = 0, 0
     for r in result:
         i, j, a = r[0], r[1], r[2]
         if i == x and j == y - 1 and a == 0:
@@ -25,74 +21,61 @@ def col_check(x, y, result):
         if i == x + 1 and j == y - 1 and a == 0:
             return 1
         if i == x - 1 and j == y and a == 1:
-            flag1 = 1
+            b0 = 1
         if i == x + 1 and j == y and a == 1:
-            flag2 = 1
-    if flag1 == 1 and flag2 == 1:
+            b1 = 1
+    if b0 == 1 and b1 == 1:
         return 1
+    else:
+        return 0
+
+def check_L(L):
+    for l in L:
+        x, y, a = l[0], l[1], l[2]
+        if a == 0:
+            if row_check(x, y, L) == 0:
+                return 0
+        elif a == 1:
+            if bottom_check(x, y, L) == 0:
+                return 0
+    return 1
+
+
+
+def return_remove(result, x, y, a):
+    remove_result = []
+    for r in result:
+        i, j, ra = r[0], r[1], r[2]
+        if i == x and j == y and ra == a:
+            continue
+        else:
+            remove_result.append([i, j, ra])
+    return remove_result
 
 
 def solution(n, bulid):
     result = []
-    for b in bulid:
-        x, y, a, b = b[0], b[1], b[2], b[3]
-        if b == 0:  # 삭제
-            if a == 0:  # 기둥삭제
-                copy = []
-                flag = 1
-                for r in result:
-                    if r[0] == x and r[1] == y and r[2] == 0:
-                        continue
-                    copy.append(r)
-                for r in copy:
-                    x2, y2, a2 = r[0], r[1], r[2]
-                    if x2 == x and y2 == y + 1 and a2 == 0:
-                        if row_check(x2, y2, copy) != 1:
-                            flag = 0
-                            break
-                    elif x2 == x - 1 and y2 == y + 1 and a2 == 1:
-                        if col_check(x2, y2, copy) != 1:
-                            flag = 0
-                            break
-                    elif x2 == x and y2 == y + 1 and a2 == 1:
-                        if col_check(x2, y2, copy) != 1:
-                            flag = 0
-                            break
-                if flag == 1:  # 무시 안하니 지운값을 result로
-                    result = copy
-            elif a == 1:  # 보삭제
-                copy = []
-                flag = 1
-                for r in result:
-                    if r[0] == x and r[1] == y and r[2] == 1:
-                        continue
-                    copy.append(r)
-                for r in copy:
-                    x2, y2, a2 = r[0], r[1], r[2]
-                    if x2 == x and y2 == y and a2 == 0:
-                        if row_check(x2, y2, copy) != 1:
-                            flag = 0
-                            break
-                    elif x2 == x + 1 and y2 == y and a2 == 0:
-                        if row_check(x2, y2, copy) != 1:
-                            flag = 0
-                            break
-                    elif x2 == x - 1 and y2 == y and a2 == 1:
-                        if col_check(x2, y2, copy) != 1:
-                            flag = 0
-                            break
-                    elif x2 == x + 1 and y2 == y and a2 == 1:
-                        if col_check(x2, y2, copy) != 1:
-                            flag = 0
-                            break
-                if flag == 1:
-                    result = copy
-        elif b == 1:  # 설치
-            if a == 0:  # 기둥
-                if row_check(x, y, result) == 1:
+    for bu in bulid:
+        x, y, a, b = bu[0], bu[1], bu[2], bu[3]
+        if b == 0:
+            # 삭제와 기둥
+            if a == 0:
+                L = return_remove(result, x, y, a)
+                if check_L(L):
+                    result = L
+            # 삭제와 바닥
+            elif a == 1:
+                L = return_remove(result, x, y, a)
+                if check_L(L):
+                    result = L
+        elif b == 1:
+            # 설치와 기둥
+            if a == 0:
+                if row_check(x, y, result):
                     result.append([x, y, a])
-            elif a == 1:  # 보
-                if col_check(x, y, result) == 1:
+            # 설치와 바닥
+            elif a == 1:
+                if bottom_check(x, y, result):
                     result.append([x, y, a])
     result.sort()
     return result
