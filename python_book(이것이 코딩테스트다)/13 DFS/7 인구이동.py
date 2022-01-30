@@ -50,7 +50,4 @@ while 1:
     if flag == 0:
         break
     turn += 1
-    # for g in graph:
-    #     print(g)
-    # print("---")
 print(turn)
