@@ -1,32 +1,31 @@
-def find_parent(x):
+def find(x):
     global parent
-    if parent[x] == x:
-        return x
-    parent[x] = find_parent(parent[x])
+    if x != parent[x]:
+        parent[x] = find(parent[x])
     return parent[x]
-
 
 def union(x, y):
     global parent
-    X = find_parent(x)
-    Y = find_parent(y)
+    X = find(x)
+    Y = find(y)
     if X < Y:
         parent[Y] = X
     else:
         parent[X] = Y
 
 
-N = int(input())
+G = int(input())
 P = int(input())
-parent = [0]*(N+1)
-for i in range(N+1):
-    parent[i] = i
-result = 0
-for i in range(P):
-    g = int(input())
-    G = find_parent(g)
-    if G == 0:
+parent = [i for i in range(G+1)]
+L = []
+for _ in range(P):
+    L.append(int(input()))
+cnt = 0
+for l in L:
+    index = find(l)
+    if index == 0:
         break
-    union(g, G-1)
-    result += 1
-print(result)
+    else:
+        union(index, index - 1)
+        cnt += 1
+print(cnt)
