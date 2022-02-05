@@ -39,5 +39,5 @@ L.sort()
 start = 0
 end = L[-1] #굳이 2억개를 할필요없이 가진겂의 최대값으로 해도됨
 M = 0
-h = binary_serach(L, m, start, end)
-print(h)
+binary_serach(L, m, start, end)
+print(M)
