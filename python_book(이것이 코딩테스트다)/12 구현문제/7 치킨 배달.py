@@ -42,4 +42,4 @@ for i in range(len(c_list)):
     visit[i] = 1
     dfs(i)
     visit[i] = 0
-print(res&
+print(res)
