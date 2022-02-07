@@ -1,47 +1,45 @@
-def cal_dist(x1,y1,x2,y2):
-    return abs(x1 - x2) + abs(y1 - y2)
-
-#[[[x,y]....],[], []]꼴
-def comb(L, M):
-    result = []
-    N = len(L)
-    if N < M:
+def dfs(now):
+    global c_list, h_list, res, visit, M
+    if visit.count(1) == M:
+        # 거리계산
+        s_c_list = []
+        for i in range(len(visit)):
+            if visit[i] == 1:
+                s_c_list.append(c_list[i])
+        res = min(res, cal_distance(s_c_list))
         return None
-    if M == 1:
-        for i in range(N):
-            result.append([L[i]])
-    else:
-        for i in range(N - M + 1):
-            for temp in comb(L[i+1:N], M-1):
-                result.append([L[i]]+temp)
-    return result
+    for i in range(now + 1, len(c_list)):
+        visit[i] = 1
+        dfs(i)
+        visit[i] = 0
+    return
 
-N, M = map(int ,input().split())
-Map = []
-house_list = []
-chicken_list = []
-for _ in range(N):
-    Map.append(list(map(int, input().split())))
+
+def cal_distance(s_c_list):
+    global N, h_list
+    res = 0
+    for hx, hy in h_list:
+        h_res = int(1e10)
+        for cx, cy in s_c_list:
+            h_res = min(h_res, abs(cx - hx) + abs(cy - hy))
+        res += h_res
+    return res
+
+
+N , M = map(int, input().split())
+Map = [list(map(int, input().split())) for _ in range(N)]
+c_list = []
+h_list = []
+res = int(1e10)
 for i in range(N):
     for j in range(N):
         if Map[i][j] == 1:
-            house_list.append([i,j])
+            h_list.append((i,j))
         elif Map[i][j] == 2:
-            chicken_list.append([i,j])
-chiken_m_lists = comb(chicken_list, M)
-res = int(1e10)
-result = []
-for chiken_m_list in chiken_m_lists:
-    total = 0
-    for house in house_list:
-        x1, y1 = house[0], house[1]
-        house_dist = int(1e10)
-        for chiken in chiken_m_list:
-            x2, y2 = chiken[0], chiken[1]
-            house_dist = min(house_dist, cal_dist(x1, y1, x2, y2))
-        total += house_dist
-    if res > total:
-        res = total
-print(res)
-
-
+            c_list.append((i,j))
+visit = [0]*(len(c_list))
+for i in range(len(c_list)):
+    visit[i] = 1
+    dfs(i)
+    visit[i] = 0
+print(res&
