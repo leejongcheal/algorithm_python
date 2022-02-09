@@ -1,3 +1,8 @@
+카멜 케이스 camelCase ex) 자바
+파스칼 케이스 PascalCase
+스네이크 케이스 snake_case ex) 파이썬
+
+
 현재점: index, now
 
 전체: total
