@@ -1,10 +1,4 @@
-from collections import Counter
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
-        freq = Counter(S)
-        count = 0
-        for char in J:
-            count += freq[char]
-        return count
-
+        return sum(s in J for s in S)
 print(Solution().numJewelsInStones("aAc", "aAAbbbb"))
