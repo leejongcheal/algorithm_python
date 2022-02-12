@@ -5,10 +5,7 @@ class Solution:
         for end in range(len(S)):
             s = S[end]
             if s in S[start:end]:
-                for start in range(start, end):
-                    if S[start] == S[end]:
-                        start += 1
-                        break
+                start = S[start:end].index(s) + start + 1
             max_size = max(max_size, end - start + 1)
         return max_size
 
