@@ -1,13 +1,10 @@
-from collections import defaultdict
+from collections import Counter
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
-        freq = defaultdict(int)
+        freq = Counter(S)
         count = 0
-        for char in S:
-            freq[char] = freq[char] + 1
         for char in J:
             count += freq[char]
         return count
-# get사용이 더빠름
 
-print(Solution().numJewelsInStones("aA", "aAAbbbb"))
+print(Solution().numJewelsInStones("aAc", "aAAbbbb"))
