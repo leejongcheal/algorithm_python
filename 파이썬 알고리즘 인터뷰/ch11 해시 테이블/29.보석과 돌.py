@@ -8,6 +8,6 @@ class Solution:
         for char in J:
             count += freq[char]
         return count
-
+# get사용이 더빠름
 
 print(Solution().numJewelsInStones("aA", "aAAbbbb"))
