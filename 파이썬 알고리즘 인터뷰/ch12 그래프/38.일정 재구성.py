@@ -4,7 +4,7 @@ class Solution:
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         graph = defaultdict(list)
         # 그래프 순서대로 구성
-        for a, b in sorted(tickets):
+        for a, b in sorted(tickets, reverse=1):
             graph[a].append(b)
 
         route = []
