@@ -1,11 +1,12 @@
+from collections import defaultdict
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
-        freq = dict()
+        freq = defaultdict(int)
         count = 0
         for char in S:
-            freq[char] = freq.get(char, 0) + 1
+            freq[char] = freq[char] + 1
         for char in J:
-            count += freq.get(char, 0)
+            count += freq[char]
         return count
 
 
