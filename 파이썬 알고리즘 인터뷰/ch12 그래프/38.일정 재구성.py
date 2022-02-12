@@ -20,4 +20,4 @@ class Solution:
         return route[::-1]
 
 
-print(Solution().findItinerary([["JFK","KUL"],["JFK","NRT"],["KUL","JFK"]]))
+print(Solution().findItinerary([["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]))
