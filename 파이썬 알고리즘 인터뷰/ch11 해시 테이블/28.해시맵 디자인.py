@@ -1,16 +1,65 @@
+import collections
+
+
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, key=None, value=None):
+        self.key = key
+        self.value = value
+        self.next = None
 class MyHashMap:
 
     def __init__(self):
-        self.dic = dict()
+        self.table = collections.defaultdict(ListNode)
+        self.size = 1000
     def put(self, key: int, value: int) -> None:
-        self.dic[key] = self.dic.get(key, [])
-        self.dic[key].append(value)
+        index = key % self.size
+        node = ListNode(key, value)
+        # 해당 index 아무것도 없는 경우
+        if self.table[index].value is None:
+            self.table[index] = node
+        # 해당 index에 여러가지 있어서 뒤쪽에 넣어줘야하는경우
+        else:
+            now = self.table[index]
+            while now is not None:
+                if now.key == key:
+                    now.value = value
+                    return
+                if now.next is None:
+                    break
+                now = now.next
+            now.next = node
+        return None
     def get(self, key: int) -> int:
-        return self.dic.get(key, [-1])[-1]
+        index = key % self.size
+        now = self.table[index]
+        # now.value가 0인경우도 있으니 value에 대해서 is not None으로 해야함
+        while now and now.value is not None:
+            if now.key == key:
+                return now.value
+            now = now.next
+        return -1
     def remove(self, key: int) -> None:
-        if self.dic.get(key, 0) != 0:
-            del self.dic[key]
-
+        index = key % self.size
+        # 아무것도 없는경우
+        if self.table[index].value is None:
+            return None
+        # 인덱스의 첫 번째 노드일때 삭제 처리
+        now = self.table[index]
+        if now.key == key:
+            if now.next is None:
+                self.table[index] = ListNode()
+            else:
+                self.table[index] = now.next
+            return
+        # 연결 리스트 노드 삭제
+        prev = now
+        now = now.next
+        while now:
+            if now.key == key:
+                prev.next = now.next
+                return
+            prev, now = now, now.next
 
 myHashMap = MyHashMap();
 print(myHashMap.put(1, 1))#; // The map is now [[1,1]]
