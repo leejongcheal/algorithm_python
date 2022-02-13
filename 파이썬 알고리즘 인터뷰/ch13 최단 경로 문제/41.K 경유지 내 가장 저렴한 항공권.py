@@ -10,8 +10,12 @@ class Solution:
         res = [INF]*(n)
         res[src] = 0
         q = [(0, src, 0)]
+        visit = set()
         while q:
             now_dist, now, k = heapq.heappop(q)
+            if (now, k) in visit:
+                continue
+            visit.add((now, k))
             # 결국엔 dst를 제일 먼저 오는것은 k내의 제일 작은 dist를 가진값이므로 이런식으로 리턴 해도 정답임
             if now == dst:
                 return now_dist
