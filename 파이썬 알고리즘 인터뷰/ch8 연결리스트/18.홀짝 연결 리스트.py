@@ -18,8 +18,8 @@ class Solution:
                 odd = odd.next
             head = head.next
             index += 1
-        if odd.next is not None:
-            odd.next = None
+        # if odd.next is not None:
+        #     odd.next = None
         if even.next is not None:
             even.next = None
         odd.next = even_head.next
@@ -29,7 +29,7 @@ l1 = ListNode(1)
 l1.next = ListNode(2)
 l1.next.next = ListNode(3)
 l1.next.next.next = ListNode(4)
-l1.next.next.next.next = ListNode(5)
+# l1.next.next.next.next = ListNode(5)
 a = Solution().oddEvenList(l1)
 while a:
     print(a.val, "->",end ="")
