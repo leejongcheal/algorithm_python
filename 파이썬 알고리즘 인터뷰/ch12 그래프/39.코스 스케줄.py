@@ -8,17 +8,21 @@ class Solution:
         graph = defaultdict(list)
         for a, b in prer:
             graph[a].append(b)
-        traced =set()
+        traced = set()
+        visited = set()
         def dfs(i):
             # 순환 구조이면 False
             if i in traced:
                 return False
+            if i in visited:
+                return True
             traced.add(i)
             for y in graph[i]:
                 if not dfs(y):
                     return False
             # 탐색 종료후에 순환노드 삭제
             traced.remove(i)
+            visited.add(i) # 이 지점 시작으로 는 순환을 발견할수 없음
             return 1
         for x in list(graph):
             # print(traced)
@@ -27,5 +31,6 @@ class Solution:
             if not dfs(x) or traced:
                 return False
         return True
-# print(Solution().canFinish(5,[[1,4],[2,4],[3,1],[3,2]]))
-print(Solution().canFinish(2,[[0,1]]))
+print(Solution().canFinish(5,[[1,4],[2,4],[3,1],[3,2]])) # 1
+print(Solution().canFinish(2,[[0,1]])) # 1
+print(Solution().canFinish(2,[[0,1],[1,0]])) # 0
