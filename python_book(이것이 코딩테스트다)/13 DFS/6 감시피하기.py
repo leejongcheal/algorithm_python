@@ -12,33 +12,36 @@ def check(Map):
                 x, y = x + dx, y + dy
     return 1
 
-def dfs(count):
-    global Map, N, flag
+def dfs(x, y):
+    global L, N, flag, count
+
     if flag == 1:
         return
     if count == 3:
-        if check(Map):
+        if check(L):
             flag = 1
-    else:
-        for i in range(N):
-            for j in range(N):
-                if Map[i][j] == "X":
-                    Map[i][j] = "O"
-                    dfs(count + 1)
-                    Map[i][j] = "X"
-
-
+        return
+    for i in range(N):
+        for j in range(N):
+            if x < i or (j > y and x == i):
+                if L[i][j] == "X":
+                    L[i][j] = "O"
+                    count += 1
+                    dfs(i, j)
+                    L[i][j] = "X"
+                    count -= 1
+    return
 
 N = int(input())
-Map = [list(input().split()) for _ in range(N)]
+L = [list(input().split()) for _ in range(N)]
 T = []
+flag = 0
+count = 0
 for i in range(N):
     for j in range(N):
-        if Map[i][j] == "T":
+        if L[i][j] == "T":
             T.append((i,j))
-# flag = 1 이면 가능하다는 뜻
-flag = 0
-dfs(0)
+dfs(-1, -1)
 if flag == 1:
     print("YES")
 else:
