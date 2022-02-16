@@ -6,14 +6,10 @@ class TreeNode:
         self.right = right
 class Solution:
     def invertTree(self, root: [TreeNode]) -> [TreeNode]:
-        q = deque([root])
-        while q:
-            now = q.popleft()
-            if now:
-                now.left, now.right = now.right, now.left
-                q.append(now.left)
-                q.append(now.right)
-        return root
+        if root:
+            root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+            return root
+        return None
 
 
 root = TreeNode(4)
