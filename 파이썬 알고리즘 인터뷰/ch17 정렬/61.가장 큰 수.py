@@ -12,6 +12,6 @@ class Solution:
                 j -= 1
         return str(int("".join(map(str,nums))))
 
-L = [3,30,34,5,9]
+L = [3,30,4,5,9]
 ans = Solution().largestNumber(L)
 print(ans)
