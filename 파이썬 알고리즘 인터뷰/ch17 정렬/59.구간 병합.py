@@ -8,7 +8,9 @@ class Solution:
             if result and start <= result[-1][1]:
                 result[-1][1] = max(result[-1][1], last)
             else:
-                result.append([start, last])
+                result += [start,last],
+                # result += [[start, last]]
+                # result.append([start, last])
         return result
 
 intervals = [[1,3],[2,6],[8,10],[15,18]]
