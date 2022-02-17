@@ -7,13 +7,13 @@ class Solution:
         if not head:
             return None
         # cur 정렬을 끝난 대상으로 , head를 정렬해야할 대상으로
-        cur = parent = ListNode(None)
+        cur = parent = ListNode()
         while head:
             while cur.next and cur.next.val < head.val:
                 cur = cur.next
             cur.next, head.next, head = head, cur.next, head.next
-            # if head and cur.val > head.val:
-            cur = parent
+            if head and cur.val > head.val:
+                cur = parent
         return parent.next
 
 root = ListNode(3)
