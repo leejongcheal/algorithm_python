@@ -5,9 +5,9 @@ class Solution:
     def twoSum(self, L: List[int], target: int) -> List[int]:
         for start, val in enumerate(L):
             now_target = target - val
-            temp = L[start+1:]
-            index = bisect_left(temp, now_target)
-            if index < len(temp) and L[index + start + 1] == now_target:
-                return start + 1, start + index + 2
-L = [5, 25, 75]
-print(Solution().twoSum(L,100))
+            index = bisect_left(L,now_target,start + 1)
+            print(start, index)
+            if index < len(L) and L[index] == now_target:
+                return start + 1, index + 1
+L = [0,0,1,2]
+print(Solution().twoSum(L,0))
