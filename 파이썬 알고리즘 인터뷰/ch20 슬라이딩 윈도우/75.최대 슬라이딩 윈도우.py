@@ -14,5 +14,10 @@ class Solution:
                 ans.append(q[0][1])
         return ans
 
-sol = Solution()
-print(sol.maxSlidingWindow(nums=[1,-1], k=1))
+# sol = Solution()
+# print(sol.maxSlidingWindow(nums=[1,-1], k=1))
+
+#  ([1,2], 1)
+# L = [1,3,-1,-3,5,3,6,7]
+L = [1,3,1,2,0,5]
+print(Solution().maxSlidingWindow(L,3))
