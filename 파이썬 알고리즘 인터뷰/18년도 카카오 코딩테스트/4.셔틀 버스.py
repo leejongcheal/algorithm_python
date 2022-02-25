@@ -1,35 +1,45 @@
 # https://programmers.co.kr/learn/courses/30/lessons/17678
 
-def change(str_h, plus_int):
-    time = 60*int(str_h[:2]) + int(str_h[3:])
-    time += plus_int
-    h, m = time//60 , time % 60
-    h += 100
-    m += 100
-    return str(h)[1:] + ":" + str(m)[1:]
-
-
+def get_m_int(time):
+    h = int(time[:2])
+    m = int(time[3:])
+    return int(h)*60 + int(m)
+def get_hhmm(val : int):
+    h = val // 60
+    m = val % 60
+    return str(h).zfill(2)+":"+str(m).zfill(2)
+# 분을 기준으로 시간을 정수화 시키자
 def solution(n, t, m, timetable):
-    answer = ''
-    start = "09:00"
-    # 셔틀시간얻기
-    bus = [[start,m]]
-    start_t = 9*60
-    for i in range(1, n):
-        bus.append([change(start, t*i),m])
-    timetable.sort()
-    i = 0
-    for time in timetable:
-        if bus[i][0] >= time and bus[i][1] > 0:
-            bus[i][1] -= 1
+    person = []
+    bus = [[9*60,m]]
+    for i in range(n-1):
+        bus.append([bus[-1][0]+t, m])
+    for t in sorted(timetable):
+        person.append(get_m_int(t))
+    bus_index = 0
+    person_index = 0
+    while 1:
+        if bus_index >= n or person_index >= len(person):
+            break
+        p = person[person_index]
+        b = bus[bus_index]
+        if p <= b[0]:
+            if bus_index == n - 1 and b[1] == 1:
+                print(bus)
+                return get_hhmm(p - 1)
+            else:
+                b[1] -= 1
+                if not b[1]:
+                    bus_index += 1
+            person_index += 1
         else:
-            while i < len(bus) and not (bus[i][0] >= time and bus[i][1] > 0):
-                i += 1
-            # 더이상 크루원이 탈 버스가 없는 경우 // 마지막버스가 다차는 경우는 따로 예외처리 해줘서 답찾기
-            if i == len(bus):
-                return bus[-1][0]
-            bus[i][1] -= 1
-        if i == len(bus) - 1 and bus[i][1] == 0:
-            return change(time, -1)
-    # 모든 크루가 마지막버스 안채우고 다탄 경우
-    return bus[-1][0]
+            bus_index += 1
+    # 어쩌피 위에서 걸러지는 경우이니 여기까지 오면 막차에 자리가 무조건 비어있다.
+    # if bus[-1][1] > 0:
+    return get_hhmm(bus[-1][0])
+
+
+L =["09:10", "09:09", "08:00"]
+print(solution(2,10,2,L))
+
+
