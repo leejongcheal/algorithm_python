@@ -1,36 +1,28 @@
 # https://programmers.co.kr/learn/courses/30/lessons/17682
 def solution(dartResult):
     answer = 0
-    score = []
-    number = -1
-    flag = 0
-    for i, char in enumerate(dartResult):
-        if "0" <= char <= "9":
-            if flag == 0:
-                number = int(char)
-                flag = 1
-                continue
-            elif flag:
-                # 10의 경우 처리
-                flag = 0
-                number *= 10
-                number += int(char)
-                continue
-        elif char == "S" or char == "D" or char == "T":
-            flag = 0
-            if char == "D":
-                number **= 2
-            elif char == "T":
-                number **= 3
-        elif char == "*":
-            flag = 0
-            if score:
-                score[-1] = score[-1]*2
-            number *= 2
+    score = [0]
+    for char in dartResult:
+        if char == "S":
+            score[-1] **= 1
+            score.append(0)
+        elif char == "D":
+            score[-1] **= 2
+            score.append(0)
+        elif char == "T":
+            score[-1] **= 3
+            score.append(0)
         elif char == "#":
-            flag = 0
-            number *= -1
-        if i+1 >= len(dartResult) or "0" <= dartResult[i+1] <= "9":
-            score.append(number)
-
+            score[-2] *= -1
+        elif char == "*":
+            score[-2] *= 2
+            if len(score) >= 3:
+                score[-3] *= 2
+        # 숫자인 경우
+        else:
+            score[-1] = score[-1]*10 + int(char)
+    print(score)
     return sum(score)
+
+s = "1S2D*3T"
+print(solution(s))
