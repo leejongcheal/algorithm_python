@@ -24,7 +24,7 @@ def solution(n, m, board):
     return sum([x.count("#") for x in board])
 
 
-# L = ["TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"]
+#  L = ["TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"]
 L = ["CCBDE", "AAADE", "AAABF", "CCBBF"]
 print(solution(4, 5, L))
 
