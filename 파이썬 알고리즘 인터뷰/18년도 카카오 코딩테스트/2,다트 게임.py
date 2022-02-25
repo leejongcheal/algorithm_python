@@ -21,7 +21,6 @@ def solution(dartResult):
         # 숫자인 경우
         else:
             score[-1] = score[-1]*10 + int(char)
-    print(score)
     return sum(score)
 
 s = "1S2D*3T"
