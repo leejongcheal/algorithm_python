@@ -1,8 +1,13 @@
+from typing import List
 from collections import defaultdict
 
-anagram = defaultdict(list)
-strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
-for word in strs:
-    sword = "".join(sorted(word))
-    anagram[sword].append(word)
-print(list(anagram.values()))
+
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        res = defaultdict(list)
+        for s in strs:
+            res["".join(sorted(s))].append(s)
+        return list(res.values())
+
+strs = ["eat","tea","tan","ate","nat","bat"]
+print(Solution().groupAnagrams(strs))
