@@ -1,6 +1,10 @@
-s = ["H","a","n","n","a","h"]
-print(s)
-# s = s[::-1] -> 리트코드 오류 ㅋㅋ 공간복잡도 o(1)때문이라는데 아오
-# s[:] = s[::-1] 요건됨 ㅋㅋㅋ
-s.reverse()
-print(s)
+from typing import List
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        s.reverse()
+        return s
+s = ["h","e","l","l","o"]
+print(Solution().reverseString(s))
