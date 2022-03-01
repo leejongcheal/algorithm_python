@@ -17,8 +17,11 @@ class Solution:
                 continue
             visit.add((now, k))
             # 결국엔 dst를 제일 먼저 오는것은 k내의 제일 작은 dist를 가진값이므로 이런식으로 리턴 해도 정답임
+            # 위처럼 생각했는데 더더욱 복잡해지는 경우 답이 아닐수도 있음 -> 리트코드는 통과되지만 수정
+            # if now == dst:
+            #     return now_dist
             if now == dst:
-                return now_dist
+                continue
             # 현재 k는 다음에 방문할 노드의 현재 경유지 갯수를 뜻함 -> 따라서 조건문 전에 dst이면 상관없음
             if k > K:  # res[now] < now_dist일 경우도 돌아야함 k 기준으로 탐색해야하니
                 continue
@@ -29,5 +32,8 @@ class Solution:
                 # 안쪽일 경우에만 값이 제일 작고 k내일때 res 수정
                 # 검사는 k의 기준에 따라서 작은값을 넣어주는식으로 탐색
                 heapq.heappush(q,(next_dist, next, k + 1))
-        return -1
+        if res[dst] != INF:
+            return res[dst]
+        else:
+            return -1
 print(Solution().findCheapestPrice(5, [[0,1,5],[1,2,5],[0,3,2],[3,1,2],[1,4,1],[4,2,1]],0,2,2))
